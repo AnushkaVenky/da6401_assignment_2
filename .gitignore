@@ -1,0 +1,19 @@
+# Dataset
+data/oxford_pet/
+
+# Checkpoints (uploaded to Google Drive separately)
+checkpoints/*.pth
+
+# W&B local logs
+wandb/
+
+# Novel images (downloaded at runtime)
+novel_images/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
