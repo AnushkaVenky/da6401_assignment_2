@@ -59,9 +59,9 @@ class MultiTaskPerceptionModel(nn.Module):
 
         # ── Download checkpoints from Google Drive ───────────────────────────
         import gdown
-        gdown.download(id="1b7ZOb5n3OwqAdVa8M7FJFFlNaO1Ytlqz", output=classifier_path, quiet=False)
-        gdown.download(id="1VFMfwcGMSlqyyxQ8ZXViVlglMTUobIT5",  output=localizer_path,  quiet=False)
-        gdown.download(id="1s4_6MBOB7oMOU3aILRq6JORutL2TwyFF",       output=unet_path,       quiet=False)
+        gdown.download(id="1yiRNVrHHPM-3-Iwx_rAyZXOp2ZUwUVww", output=classifier_path, quiet=False)
+        gdown.download(id="19G6uylzVPN4XTUe6CRV4Yl5haefzs_ZM",  output=localizer_path,  quiet=False)
+        gdown.download(id="1qNRy4Y2p9lEnMTOl1w2wRXhoDkQlOhqi",       output=unet_path,       quiet=False)
 
         # ── Initialise sub-models and load weights ───────────────────────────
         clf = VGG11Classifier(num_breeds, in_channels)
